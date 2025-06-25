@@ -1,10 +1,9 @@
-
 import React from 'react';
 import RoadmapSection from './RoadmapSection';
 import { 
   Zap, Target, BarChart3, Copy, Clock, DollarSign, Eye, Network, 
   Info, Users, TrendingUp, History, BookOpen, Wallet, Star,
-  Smartphone, Activity, Bell, Notification, Calculator, LineChart,
+  Smartphone, Activity, Bell, Calculator, LineChart,
   Shield, Layout, Trophy, Flame, BarChart, Globe, Twitter,
   Brain, PieChart, Settings
 } from 'lucide-react';
@@ -32,7 +31,7 @@ const Roadmap: React.FC = () => {
     { text: "Mobile Webapp: trade on the go from any device", icon: Smartphone },
     { text: "Charts v2: on-chart indicators for tracked wallets, dev buy/sell, top traders, and more", icon: Activity },
     { text: "Wallet Tracker: follow whale movements and get instant alerts", icon: Bell },
-    { text: "Tracked Wallet Feed: real-time notifications when your watched wallets make moves", icon: Notification }
+    { text: "Tracked Wallet Feed: real-time notifications when your watched wallets make moves", icon: Bell }
   ];
 
   const nextFeatures = [
