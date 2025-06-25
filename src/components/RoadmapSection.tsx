@@ -1,11 +1,16 @@
 
 import React from 'react';
-import { Banana, Bolt, Rocket, Target } from 'lucide-react';
+import { Banana, Bolt, Rocket, Target, LucideIcon } from 'lucide-react';
 import FeatureCard from './FeatureCard';
+
+interface Feature {
+  text: string;
+  icon: LucideIcon;
+}
 
 interface RoadmapSectionProps {
   stage: 'LIVE' | 'NOW' | 'NEXT' | 'LATER';
-  features: string[];
+  features: Feature[];
 }
 
 const RoadmapSection: React.FC<RoadmapSectionProps> = ({ stage, features }) => {
@@ -35,7 +40,7 @@ const RoadmapSection: React.FC<RoadmapSectionProps> = ({ stage, features }) => {
       {/* Feature Cards Grid */}
       <div className="grid gap-2">
         {features.map((feature, index) => (
-          <FeatureCard key={index} feature={feature} stage={stage} />
+          <FeatureCard key={index} feature={feature.text} stage={stage} icon={feature.icon} />
         ))}
       </div>
     </div>
