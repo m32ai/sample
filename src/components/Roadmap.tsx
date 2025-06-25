@@ -1,4 +1,3 @@
-
 import React from 'react';
 import RoadmapSection from './RoadmapSection';
 import { 
@@ -29,7 +28,6 @@ const Roadmap: React.FC = () => {
   ];
 
   const nowFeatures = [
-    { text: "Mobile Webapp: trade on the go from any device", icon: Smartphone },
     { text: "Charts v2: on-chart indicators for tracked wallets, dev buy/sell, top traders, and more", icon: Activity },
     { text: "Wallet Tracker: add wallets with custom labels, icons, and nicknames for organized monitoring", icon: Tags },
     { text: "Wallet Activity Feed: real-time feed of tracked wallet actions with filtering by labels, tokens, and timeframes", icon: Filter },
@@ -38,6 +36,7 @@ const Roadmap: React.FC = () => {
   ];
 
   const nextFeatures = [
+    { text: "Mobile Webapp: trade on the go from any device", icon: Smartphone },
     { text: "TWAP / DCA: auto ladder buys & sells with smart exit conditions", icon: Calculator },
     { text: "Enhanced Token Info: safety scores, liquidity locks, dev wallet activity tracking", icon: Shield },
     { text: "Custom Dashboard: drag-drop widgets, save personal layouts for maximum efficiency", icon: Layout }
@@ -48,10 +47,7 @@ const Roadmap: React.FC = () => {
     { text: "Trending Tokens: live feed of tokens spiking in volume, price, social buzz, or whale activity", icon: Flame },
     { text: "Multichart View: compare multiple tokens or wallets side-by-side for better analysis", icon: BarChart },
     { text: "Multichain Support: expand trading beyond current chain to capture cross-chain alpha", icon: Globe },
-    { text: "Twitter Tracker: monitor social sentiment and influencer calls for early alpha signals", icon: Twitter },
-    { text: "AI Alpha Alerts: machine learning powered trade signals based on on-chain patterns", icon: Brain },
-    { text: "Portfolio Analytics: advanced risk metrics and performance attribution across all positions", icon: PieChart },
-    { text: "Smart Notifications: customizable alerts for price movements, whale activity, and market events", icon: Settings }
+    { text: "Twitter Tracker: monitor social sentiment and influencer calls for early alpha signals", icon: Twitter }
   ];
 
   return (
