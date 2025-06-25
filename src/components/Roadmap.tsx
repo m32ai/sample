@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import RoadmapSection from './RoadmapSection';
 import { 
@@ -29,13 +30,14 @@ const Roadmap: React.FC = () => {
   ];
 
   const nowFeatures = [
-    { text: "Charts v2: on-chart indicators for tracked wallets, dev buy/sell, top traders, and more", icon: Activity },
+    { text: "Charts v2: advanced charting with dev buy/sell indicators, top traders analysis, and enhanced overlays", icon: Activity },
     { text: "Custom Dashboard: drag-drop widgets, save personal layouts for maximum efficiency", icon: Layout },
     { text: "Wallet Tracker: add wallets with custom labels, icons, and nicknames for organized monitoring", icon: Tags },
     { text: "Wallet Activity Feed: real-time feed of tracked wallet actions with in-app bell notifications and toggle controls", icon: Filter }
   ];
 
   const nextFeatures = [
+    { text: "On-Chart Wallet Indicators: visual markers on charts showing tracked wallet activity and positions", icon: LineChart },
     { text: "Wallet Label Metrics Pop-up: hover over wallet labels to see aggregated buy/sell metrics and notification toggles", icon: AlertCircle },
     { text: "Mobile Webapp: trade on the go from any device", icon: Smartphone },
     { text: "TWAP / DCA: auto ladder buys & sells with smart exit conditions", icon: Calculator },
@@ -84,3 +86,4 @@ const Roadmap: React.FC = () => {
 };
 
 export default Roadmap;
+
