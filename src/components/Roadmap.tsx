@@ -59,7 +59,7 @@ const Roadmap: React.FC = () => {
             BANANA PRO ROADMAP
           </h1>
           <p className="font-inter text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            From alpha to empire: your complete guide to what's shipping, building, planned, and exploring. 
+            From alpha to empire: your complete guide to what's shipping, building, planned, and exploring.<br />
             Built for traders who demand speed, precision, and maximum alpha.
           </p>
         </div>
@@ -70,13 +70,6 @@ const Roadmap: React.FC = () => {
           <RoadmapSection stage="NOW" features={nowFeatures} />
           <RoadmapSection stage="NEXT" features={nextFeatures} />
           <RoadmapSection stage="LATER" features={laterFeatures} />
-        </div>
-
-        {/* Footer */}
-        <div className="text-center mt-8">
-          <p className="font-inter text-gray-400 text-base">
-            Built for traders, by traders. Maximum alpha, minimum fluff.
-          </p>
         </div>
       </div>
     </div>
