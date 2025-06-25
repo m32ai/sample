@@ -24,7 +24,8 @@ const Roadmap: React.FC = () => {
   const nowFeatures = [
     "Mobile Webapp: trade on the go",
     "Charts v2: on-chart indicators for tracked wallets, dev buy/sell, top traders, and more",
-    "Wallet Tracker + Feed: follow whales, get real-time alerts"
+    "Wallet Tracker: follow whales",
+    "Tracked Wallet Feed: get real-time alerts"
   ];
 
   const nextFeatures = [

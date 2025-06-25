@@ -7,26 +7,19 @@ interface FeatureCardProps {
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ feature, stage }) => {
-  const getStageColor = () => {
-    switch (stage) {
-      case 'LIVE':
-        return 'border-green-500';
-      case 'NOW':
-        return 'border-blue-500';
-      case 'NEXT':
-        return 'border-purple-500';
-      case 'LATER':
-        return 'border-orange-500';
-      default:
-        return 'border-gray-500';
-    }
-  };
-
   return (
-    <div className={`bg-white rounded-xl shadow-lg p-4 border-l-4 ${getStageColor()} h-full`}>
-      <p className="font-inter text-sm text-gray-800 leading-relaxed">
-        {feature}
-      </p>
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+      {/* Header with banana yellow background */}
+      <div className="bg-banana-yellow px-4 py-2">
+        <div className="w-2 h-2 bg-banana-black rounded-full"></div>
+      </div>
+      
+      {/* Body with banana black background */}
+      <div className="bg-banana-black p-4">
+        <p className="font-inter text-white text-sm leading-relaxed">
+          {feature}
+        </p>
+      </div>
     </div>
   );
 };
