@@ -1,3 +1,4 @@
+
 import React from 'react';
 import RoadmapSection from './RoadmapSection';
 import { 
@@ -5,7 +6,7 @@ import {
   Info, Users, TrendingUp, History, BookOpen, Wallet, Star,
   Smartphone, Activity, Bell, Calculator, LineChart,
   Shield, Layout, Trophy, Flame, BarChart, Globe, Twitter,
-  Brain, PieChart, Settings
+  Brain, PieChart, Settings, Tags, Filter, AlertCircle
 } from 'lucide-react';
 
 const Roadmap: React.FC = () => {
@@ -30,13 +31,14 @@ const Roadmap: React.FC = () => {
   const nowFeatures = [
     { text: "Mobile Webapp: trade on the go from any device", icon: Smartphone },
     { text: "Charts v2: on-chart indicators for tracked wallets, dev buy/sell, top traders, and more", icon: Activity },
-    { text: "Wallet Tracker: follow whale movements and get instant alerts", icon: Bell },
-    { text: "Tracked Wallet Feed: real-time notifications when your watched wallets make moves", icon: Bell }
+    { text: "Wallet Tracker: add wallets with custom labels, icons, and nicknames for organized monitoring", icon: Tags },
+    { text: "Wallet Activity Feed: real-time feed of tracked wallet actions with filtering by labels, tokens, and timeframes", icon: Filter },
+    { text: "Wallet Notifications: in-app bell notifications for tracked wallet activities with toggle controls", icon: Bell },
+    { text: "Wallet Label Metrics Pop-up: hover over wallet labels to see aggregated buy/sell metrics and notification toggles", icon: AlertCircle }
   ];
 
   const nextFeatures = [
     { text: "TWAP / DCA: auto ladder buys & sells with smart exit conditions", icon: Calculator },
-    { text: "Wallet Metrics Pop-up: instant alpha insights on any tracked wallet's performance", icon: LineChart },
     { text: "Enhanced Token Info: safety scores, liquidity locks, dev wallet activity tracking", icon: Shield },
     { text: "Custom Dashboard: drag-drop widgets, save personal layouts for maximum efficiency", icon: Layout }
   ];
