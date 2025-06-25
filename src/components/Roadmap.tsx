@@ -1,4 +1,3 @@
-
 import React from 'react';
 import RoadmapSection from './RoadmapSection';
 
@@ -22,26 +21,28 @@ const Roadmap: React.FC = () => {
   ];
 
   const nowFeatures = [
-    "Mobile Webapp: trade on the go",
+    "Mobile Webapp: trade on the go from any device",
     "Charts v2: on-chart indicators for tracked wallets, dev buy/sell, top traders, and more",
-    "Wallet Tracker: follow whales",
-    "Tracked Wallet Feed: get real-time alerts"
+    "Wallet Tracker: follow whale movements and get instant alerts",
+    "Tracked Wallet Feed: real-time notifications when your watched wallets make moves"
   ];
 
   const nextFeatures = [
-    "TWAP / DCA: auto ladder buys & sells with exit conditions",
-    "Wallet Metrics Pop-up: instant signal insights on tracked wallets",
-    "Enhanced Token Info: safety scores, liquidity locks, dev wallet moves",
-    "Custom Dashboard: drag-drop widgets, save personal layouts"
+    "TWAP / DCA: auto ladder buys & sells with smart exit conditions",
+    "Wallet Metrics Pop-up: instant alpha insights on any tracked wallet's performance",
+    "Enhanced Token Info: safety scores, liquidity locks, dev wallet activity tracking",
+    "Custom Dashboard: drag-drop widgets, save personal layouts for maximum efficiency"
   ];
 
   const laterFeatures = [
-    "Banana Battles: social-trading leagues with live leaderboards",
-    "Trending Tokens: live leaderboard of tokens spiking in volume, price, social buzz, or tracked-wallet activity",
-    "Multichart View: compare tokens or wallets side-by-side",
-    "Multichain: expand beyond current chain",
-    "Twitter Tracker",
-    "... and more!"
+    "Banana Battles: competitive trading leagues with live leaderboards and rewards",
+    "Trending Tokens: live feed of tokens spiking in volume, price, social buzz, or whale activity",
+    "Multichart View: compare multiple tokens or wallets side-by-side for better analysis",
+    "Multichain Support: expand trading beyond current chain to capture cross-chain alpha",
+    "Twitter Tracker: monitor social sentiment and influencer calls for early alpha signals",
+    "AI Alpha Alerts: machine learning powered trade signals based on on-chain patterns",
+    "Portfolio Analytics: advanced risk metrics and performance attribution across all positions",
+    "Smart Notifications: customizable alerts for price movements, whale activity, and market events"
   ];
 
   return (
