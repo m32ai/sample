@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import RoadmapSection from './RoadmapSection';
 import { 
@@ -60,8 +61,7 @@ const Roadmap: React.FC = () => {
             BANANA PRO ROADMAP
           </h1>
           <p className="font-inter text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            From alpha to empire: your complete guide to what's shipping, building, planned, and exploring. 
-            Built for traders who demand speed, precision, and maximum alpha.
+            Your complete guide to what's shipping, building, and planned. Built for traders who demand speed, precision, and maximum alpha.
           </p>
         </div>
 
@@ -78,3 +78,4 @@ const Roadmap: React.FC = () => {
 };
 
 export default Roadmap;
+
