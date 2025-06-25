@@ -1,6 +1,6 @@
 
 import React from 'react';
-import RoadmapCard from './RoadmapCard';
+import RoadmapSection from './RoadmapSection';
 
 const Roadmap: React.FC = () => {
   const liveFeatures = [
@@ -57,12 +57,12 @@ const Roadmap: React.FC = () => {
           </p>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-          <RoadmapCard stage="LIVE" features={liveFeatures} />
-          <RoadmapCard stage="NOW" features={nowFeatures} />
-          <RoadmapCard stage="NEXT" features={nextFeatures} />
-          <RoadmapCard stage="LATER" features={laterFeatures} />
+        {/* Roadmap Sections Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          <RoadmapSection stage="LIVE" features={liveFeatures} />
+          <RoadmapSection stage="NOW" features={nowFeatures} />
+          <RoadmapSection stage="NEXT" features={nextFeatures} />
+          <RoadmapSection stage="LATER" features={laterFeatures} />
         </div>
 
         {/* Footer */}

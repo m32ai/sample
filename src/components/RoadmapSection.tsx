@@ -1,0 +1,45 @@
+
+import React from 'react';
+import { Banana, Bolt, Rocket, Target } from 'lucide-react';
+import FeatureCard from './FeatureCard';
+
+interface RoadmapSectionProps {
+  stage: 'LIVE' | 'NOW' | 'NEXT' | 'LATER';
+  features: string[];
+}
+
+const RoadmapSection: React.FC<RoadmapSectionProps> = ({ stage, features }) => {
+  const getIcon = () => {
+    switch (stage) {
+      case 'LIVE':
+        return <Banana className="w-8 h-8 text-banana-black" />;
+      case 'NOW':
+        return <Bolt className="w-8 h-8 text-banana-black" />;
+      case 'NEXT':
+        return <Rocket className="w-8 h-8 text-banana-black" />;
+      case 'LATER':
+        return <Target className="w-8 h-8 text-banana-black" />;
+    }
+  };
+
+  return (
+    <div className="space-y-6">
+      {/* Section Header */}
+      <div className="bg-banana-yellow px-6 py-4 rounded-xl flex items-center gap-3">
+        {getIcon()}
+        <h2 className="font-big-shoulders text-2xl font-bold text-banana-black">
+          {stage}
+        </h2>
+      </div>
+      
+      {/* Feature Cards Grid */}
+      <div className="grid gap-4">
+        {features.map((feature, index) => (
+          <FeatureCard key={index} feature={feature} stage={stage} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default RoadmapSection;
