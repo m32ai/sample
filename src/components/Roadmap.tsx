@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import RoadmapSection from './RoadmapSection';
 import { 
@@ -59,7 +56,7 @@ const Roadmap: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="font-big-shoulders text-6xl font-bold text-banana-yellow mb-3">
-            BANANA GUN ROADMAP
+            BANANA PRO ROADMAP
           </h1>
           <p className="font-inter text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             From alpha to empire: your complete guide to what's shipping, building, planned, and exploring. 
@@ -87,5 +84,3 @@ const Roadmap: React.FC = () => {
 };
 
 export default Roadmap;
-
-
