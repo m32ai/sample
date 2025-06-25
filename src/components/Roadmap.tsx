@@ -18,7 +18,7 @@ const Roadmap: React.FC = () => {
     { text: "Positions: live entry, size, real-time PnL", icon: DollarSign },
     { text: "PnL Overview: instant profit & loss snapshot on any wallet", icon: Eye },
     { text: "Bubble Map: surface bundlers and wallet links", icon: Network },
-    { text: "Token Info v1: contract basics + social links", icon: Info },
+    { text: "Token Info v1: price, market cap, liquidity, holders, age, supply, and personal PnL stats", icon: Info },
     { text: "Top Holders: biggest bags at a glance", icon: Users },
     { text: "Top Traders: wallets with highest realized PnL", icon: TrendingUp },
     { text: "My Trade History: full personal ledger", icon: History },
