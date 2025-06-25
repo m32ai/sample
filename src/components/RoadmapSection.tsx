@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import { Banana, Bolt, Rocket, Target, LucideIcon } from 'lucide-react';
 import FeatureCard from './FeatureCard';
@@ -17,13 +18,13 @@ const RoadmapSection: React.FC<RoadmapSectionProps> = ({ stage, features }) => {
   const getIcon = () => {
     switch (stage) {
       case 'LIVE':
-        return <Banana className="w-6 h-6 text-banana-black" />;
+        return <Banana className="w-7 h-7 text-banana-black" />;
       case 'NOW':
-        return <Bolt className="w-6 h-6 text-banana-black" />;
+        return <Bolt className="w-7 h-7 text-banana-black" />;
       case 'NEXT':
-        return <Rocket className="w-6 h-6 text-banana-black" />;
+        return <Rocket className="w-7 h-7 text-banana-black" />;
       case 'LATER':
-        return <Target className="w-6 h-6 text-banana-black" />;
+        return <Target className="w-7 h-7 text-banana-black" />;
     }
   };
 
@@ -32,7 +33,7 @@ const RoadmapSection: React.FC<RoadmapSectionProps> = ({ stage, features }) => {
       {/* Section Header */}
       <div className="bg-banana-yellow px-4 py-3 rounded-lg flex items-center gap-2">
         {getIcon()}
-        <h2 className="font-big-shoulders text-xl font-bold text-banana-black">
+        <h2 className="font-big-shoulders text-2xl font-bold text-banana-black">
           {stage}
         </h2>
       </div>
@@ -48,3 +49,4 @@ const RoadmapSection: React.FC<RoadmapSectionProps> = ({ stage, features }) => {
 };
 
 export default RoadmapSection;
+

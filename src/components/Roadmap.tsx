@@ -1,5 +1,6 @@
 
 
+
 import React from 'react';
 import RoadmapSection from './RoadmapSection';
 import { 
@@ -57,10 +58,10 @@ const Roadmap: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="font-big-shoulders text-5xl font-bold text-banana-yellow mb-3">
+          <h1 className="font-big-shoulders text-6xl font-bold text-banana-yellow mb-3">
             BANANA GUN ROADMAP
           </h1>
-          <p className="font-inter text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="font-inter text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             From alpha to empire: your complete guide to what's shipping, building, planned, and exploring. 
             Built for traders who demand speed, precision, and maximum alpha.
           </p>
@@ -76,7 +77,7 @@ const Roadmap: React.FC = () => {
 
         {/* Footer */}
         <div className="text-center mt-8">
-          <p className="font-inter text-gray-400 text-sm">
+          <p className="font-inter text-gray-400 text-base">
             Built for traders, by traders. Maximum alpha, minimum fluff.
           </p>
         </div>
@@ -86,4 +87,5 @@ const Roadmap: React.FC = () => {
 };
 
 export default Roadmap;
+
 
