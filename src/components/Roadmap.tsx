@@ -1,3 +1,4 @@
+
 import React from 'react';
 import RoadmapSection from './RoadmapSection';
 import { 
@@ -30,7 +31,7 @@ const Roadmap: React.FC = () => {
   const nowFeatures = [
     { text: "Charts v2: on-chart indicators for tracked wallets, dev buy/sell, top traders, and more", icon: Activity },
     { text: "Wallet Tracker: add wallets with custom labels, icons, and nicknames for organized monitoring", icon: Tags },
-    { text: "Wallet Activity Feed: real-time feed of tracked wallet actions with filtering by labels, tokens, and timeframes", icon: Filter },
+    { text: "Wallet Activity Feed: real-time feed of tracked wallet actions", icon: Filter },
     { text: "Wallet Notifications: in-app bell notifications for tracked wallet activities with toggle controls", icon: Bell },
     { text: "Wallet Label Metrics Pop-up: hover over wallet labels to see aggregated buy/sell metrics and notification toggles", icon: AlertCircle },
     { text: "Custom Dashboard: drag-drop widgets, save personal layouts for maximum efficiency", icon: Layout }
