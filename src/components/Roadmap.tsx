@@ -1,0 +1,79 @@
+
+import React from 'react';
+import RoadmapCard from './RoadmapCard';
+
+const Roadmap: React.FC = () => {
+  const liveFeatures = [
+    "One-tap Buy/Sell: fire and fill in seconds",
+    "Launch Snipe: catch the first block with one click",
+    "Charts v1: price, volume, basic overlays",
+    "Copy Trade: mirror top-performing wallets",
+    "Pending Orders: view, edit, or cancel queued plays",
+    "Positions: live entry, size, real-time PnL",
+    "PnL Overview: instant profit & loss snapshot on any wallet",
+    "Bubble Map: surface bundlers and wallet links",
+    "Token Info v1: contract basics + social links",
+    "Top Holders: biggest bags at a glance",
+    "Top Traders: wallets with highest realized PnL",
+    "My Trade History: full personal ledger",
+    "Transaction Log: complete on-chain history per token",
+    "Wallets: add, import, label, and manage up to 10 wallets",
+    "Watchlist: custom radar for tokens you track"
+  ];
+
+  const nowFeatures = [
+    "Mobile Webapp: trade on the go",
+    "Charts v2: on-chart indicators for tracked wallets, dev buy/sell, top traders, and more",
+    "Wallet Tracker + Feed: follow whales, get real-time alerts"
+  ];
+
+  const nextFeatures = [
+    "TWAP / DCA: auto ladder buys & sells with exit conditions",
+    "Wallet Metrics Pop-up: instant signal insights on tracked wallets",
+    "Enhanced Token Info: safety scores, liquidity locks, dev wallet moves",
+    "Custom Dashboard: drag-drop widgets, save personal layouts"
+  ];
+
+  const laterFeatures = [
+    "Banana Battles: social-trading leagues with live leaderboards",
+    "Trending Tokens: live leaderboard of tokens spiking in volume, price, social buzz, or tracked-wallet activity",
+    "Multichart View: compare tokens or wallets side-by-side",
+    "Multichain: expand beyond current chain",
+    "Twitter Tracker",
+    "... and more!"
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-banana-black py-8 px-4">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="font-big-shoulders text-6xl font-bold text-banana-yellow mb-4">
+            BANANA GUN ROADMAP
+          </h1>
+          <p className="font-inter text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            From alpha to empire: your complete guide to what's shipping, building, planned, and exploring. 
+            Built for traders who demand speed, precision, and maximum alpha.
+          </p>
+        </div>
+
+        {/* Cards Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+          <RoadmapCard stage="LIVE" features={liveFeatures} />
+          <RoadmapCard stage="NOW" features={nowFeatures} />
+          <RoadmapCard stage="NEXT" features={nextFeatures} />
+          <RoadmapCard stage="LATER" features={laterFeatures} />
+        </div>
+
+        {/* Footer */}
+        <div className="text-center mt-12">
+          <p className="font-inter text-gray-400 text-sm">
+            Built for traders, by traders. Maximum alpha, minimum fluff.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Roadmap;
