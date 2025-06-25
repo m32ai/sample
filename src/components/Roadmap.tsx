@@ -11,43 +11,43 @@ import {
 const Roadmap: React.FC = () => {
   const liveFeatures = [
     { text: "One-tap Buy/Sell: fire and fill in seconds", icon: Zap },
-    { text: "Launch Snipe: catch the first block with one click", icon: Target },
+    { text: "Launch Snipe: catch first block with one click", icon: Target },
     { text: "Charts v1: price, volume, basic overlays", icon: BarChart3 },
-    { text: "Copy Trade: mirror top-performing wallets", icon: Copy },
-    { text: "Pending Orders: view, edit, or cancel queued plays", icon: Clock },
+    { text: "Copy Trade: mirror top wallets", icon: Copy },
+    { text: "Pending Orders: view, edit, cancel queued trades", icon: Clock },
     { text: "Positions: live entry, size, real-time PnL", icon: DollarSign },
-    { text: "PnL Overview: instant profit & loss snapshot on any wallet", icon: Eye },
+    { text: "PnL Overview: instant profit & loss on any wallet", icon: Eye },
     { text: "Bubble Map: surface bundlers and wallet links", icon: Network },
-    { text: "Token Info v1: price, market cap, liquidity, holders, age, supply, and personal PnL stats", icon: Info },
+    { text: "Token Info v1: price, cap, liquidity, holders, age, supply, personal PnL", icon: Info },
     { text: "Top Holders: biggest bags at a glance", icon: Users },
     { text: "Top Traders: wallets with highest realized PnL", icon: TrendingUp },
     { text: "My Trade History: full personal ledger", icon: History },
     { text: "Transaction Log: complete on-chain history per token", icon: BookOpen },
-    { text: "Wallets: add, import, label, and manage up to 10 wallets", icon: Wallet },
-    { text: "Watchlist: custom radar for tokens you track", icon: Star }
+    { text: "Wallets: add, import, label, manage up to 10 wallets", icon: Wallet },
+    { text: "Watchlist: custom radar for tracked tokens", icon: Star }
   ];
 
   const nowFeatures = [
-    { text: "Charts v2: advanced charting with dev buy/sell indicators, top traders analysis, and enhanced overlays", icon: Activity },
-    { text: "Custom Dashboard: drag-drop widgets, save personal layouts for maximum efficiency", icon: Layout },
-    { text: "Wallet Tracker: add wallets with custom labels, icons, and nicknames for organized monitoring", icon: Tags },
-    { text: "Wallet Activity Feed: real-time feed of tracked wallet actions with in-app bell notifications and toggle controls", icon: Filter }
+    { text: "Charts v2: advanced charting with dev indicators, trader analysis, enhanced overlays", icon: Activity },
+    { text: "Custom Dashboard: drag-drop widgets, save layouts for max efficiency", icon: Layout },
+    { text: "Wallet Tracker: add wallets with custom labels, icons, nicknames", icon: Tags },
+    { text: "Wallet Activity Feed: real-time feed with bell notifications and controls", icon: Filter }
   ];
 
   const nextFeatures = [
-    { text: "On-Chart Wallet Indicators: visual markers on charts showing tracked wallet activity and positions", icon: LineChart },
-    { text: "Wallet Label Metrics Pop-up: hover over wallet labels to see aggregated buy/sell metrics and notification toggles", icon: AlertCircle },
+    { text: "On-Chart Wallet Indicators: visual markers showing tracked wallet activity", icon: LineChart },
+    { text: "Wallet Label Metrics: hover for buy/sell metrics and notification toggles", icon: AlertCircle },
     { text: "Mobile Webapp: trade on the go from any device", icon: Smartphone },
-    { text: "TWAP / DCA: auto ladder buys & sells with smart exit conditions", icon: Calculator },
-    { text: "Enhanced Token Info: safety scores, liquidity locks, dev wallet activity tracking", icon: Shield },
-    { text: "Trending Tokens: live feed of tokens spiking in volume, price, social buzz, whale activity, and among tracked wallets", icon: Flame }
+    { text: "TWAP / DCA: auto ladder buys & sells with smart exits", icon: Calculator },
+    { text: "Enhanced Token Info: safety scores, liquidity locks, dev tracking", icon: Shield },
+    { text: "Trending Tokens: live feed of volume, price, social, whale activity spikes", icon: Flame }
   ];
 
   const laterFeatures = [
-    { text: "Banana Battles: competitive trading leagues with live leaderboards and rewards", icon: Trophy },
-    { text: "Multichart View: compare multiple tokens or wallets side-by-side for better analysis", icon: BarChart },
-    { text: "Multichain Support: expand trading beyond current chain to capture cross-chain alpha", icon: Globe },
-    { text: "Twitter Tracker: monitor social sentiment and influencer calls for early alpha signals", icon: Twitter }
+    { text: "Banana Battles: competitive trading leagues with leaderboards and rewards", icon: Trophy },
+    { text: "Multichart View: compare multiple tokens or wallets side-by-side", icon: BarChart },
+    { text: "Multichain Support: expand beyond current chain for cross-chain alpha", icon: Globe },
+    { text: "Twitter Tracker: monitor sentiment and influencer calls for early alpha", icon: Twitter }
   ];
 
   return (
