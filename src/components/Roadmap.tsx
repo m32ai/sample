@@ -45,21 +45,21 @@ const Roadmap: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-banana-black py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-banana-black py-6 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="font-big-shoulders text-6xl font-bold text-banana-yellow mb-4">
+        <div className="text-center mb-8">
+          <h1 className="font-big-shoulders text-5xl font-bold text-banana-yellow mb-3">
             BANANA GUN ROADMAP
           </h1>
-          <p className="font-inter text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="font-inter text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
             From alpha to empire: your complete guide to what's shipping, building, planned, and exploring. 
             Built for traders who demand speed, precision, and maximum alpha.
           </p>
         </div>
 
         {/* Roadmap Sections Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
           <RoadmapSection stage="LIVE" features={liveFeatures} />
           <RoadmapSection stage="NOW" features={nowFeatures} />
           <RoadmapSection stage="NEXT" features={nextFeatures} />
@@ -67,7 +67,7 @@ const Roadmap: React.FC = () => {
         </div>
 
         {/* Footer */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <p className="font-inter text-gray-400 text-sm">
             Built for traders, by traders. Maximum alpha, minimum fluff.
           </p>

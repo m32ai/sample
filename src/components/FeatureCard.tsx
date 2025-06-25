@@ -8,15 +8,15 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ feature, stage }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden h-full">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
       {/* Header with banana yellow background */}
-      <div className="bg-banana-yellow px-4 py-2">
-        <div className="w-2 h-2 bg-banana-black rounded-full"></div>
+      <div className="bg-banana-yellow px-3 py-1">
+        <div className="w-1.5 h-1.5 bg-banana-black rounded-full"></div>
       </div>
       
       {/* Body with banana black background */}
-      <div className="bg-banana-black p-4">
-        <p className="font-inter text-white text-sm leading-relaxed">
+      <div className="bg-banana-black p-3">
+        <p className="font-inter text-white text-xs leading-tight">
           {feature}
         </p>
       </div>
