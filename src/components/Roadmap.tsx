@@ -32,14 +32,14 @@ const Roadmap: React.FC = () => {
     { text: "Wallet Tracker: add wallets with custom labels, icons, and nicknames for organized monitoring", icon: Tags },
     { text: "Wallet Activity Feed: real-time feed of tracked wallet actions with filtering by labels, tokens, and timeframes", icon: Filter },
     { text: "Wallet Notifications: in-app bell notifications for tracked wallet activities with toggle controls", icon: Bell },
-    { text: "Wallet Label Metrics Pop-up: hover over wallet labels to see aggregated buy/sell metrics and notification toggles", icon: AlertCircle }
+    { text: "Wallet Label Metrics Pop-up: hover over wallet labels to see aggregated buy/sell metrics and notification toggles", icon: AlertCircle },
+    { text: "Custom Dashboard: drag-drop widgets, save personal layouts for maximum efficiency", icon: Layout }
   ];
 
   const nextFeatures = [
     { text: "Mobile Webapp: trade on the go from any device", icon: Smartphone },
     { text: "TWAP / DCA: auto ladder buys & sells with smart exit conditions", icon: Calculator },
-    { text: "Enhanced Token Info: safety scores, liquidity locks, dev wallet activity tracking", icon: Shield },
-    { text: "Custom Dashboard: drag-drop widgets, save personal layouts for maximum efficiency", icon: Layout }
+    { text: "Enhanced Token Info: safety scores, liquidity locks, dev wallet activity tracking", icon: Shield }
   ];
 
   const laterFeatures = [
