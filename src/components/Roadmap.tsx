@@ -39,12 +39,12 @@ const Roadmap: React.FC = () => {
   const nextFeatures = [
     { text: "Mobile Webapp: trade on the go from any device", icon: Smartphone },
     { text: "TWAP / DCA: auto ladder buys & sells with smart exit conditions", icon: Calculator },
-    { text: "Enhanced Token Info: safety scores, liquidity locks, dev wallet activity tracking", icon: Shield }
+    { text: "Enhanced Token Info: safety scores, liquidity locks, dev wallet activity tracking", icon: Shield },
+    { text: "Trending Tokens: live feed of tokens spiking in volume, price, social buzz, whale activity, and among tracked wallets", icon: Flame }
   ];
 
   const laterFeatures = [
     { text: "Banana Battles: competitive trading leagues with live leaderboards and rewards", icon: Trophy },
-    { text: "Trending Tokens: live feed of tokens spiking in volume, price, social buzz, or whale activity", icon: Flame },
     { text: "Multichart View: compare multiple tokens or wallets side-by-side for better analysis", icon: BarChart },
     { text: "Multichain Support: expand trading beyond current chain to capture cross-chain alpha", icon: Globe },
     { text: "Twitter Tracker: monitor social sentiment and influencer calls for early alpha signals", icon: Twitter }
