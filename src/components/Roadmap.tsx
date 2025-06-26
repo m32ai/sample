@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import RoadmapSection from './RoadmapSection';
 import { 
@@ -65,12 +64,26 @@ const Roadmap: React.FC = () => {
           </p>
         </div>
 
-        {/* Roadmap Sections Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-          <RoadmapSection stage="LIVE" features={liveFeatures} />
-          <RoadmapSection stage="NOW" features={nowFeatures} />
-          <RoadmapSection stage="NEXT" features={nextFeatures} />
-          <RoadmapSection stage="LATER" features={laterFeatures} />
+        {/* Live Features Section */}
+        <div className="mb-12">
+          <h2 className="font-big-shoulders text-4xl font-bold text-banana-yellow mb-6 text-center">
+            LIVE FEATURES
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
+            <RoadmapSection stage="LIVE" features={liveFeatures} />
+          </div>
+        </div>
+
+        {/* Roadmap Section */}
+        <div>
+          <h2 className="font-big-shoulders text-4xl font-bold text-banana-yellow mb-6 text-center">
+            BANANA PRO ROADMAP
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <RoadmapSection stage="NOW" features={nowFeatures} />
+            <RoadmapSection stage="NEXT" features={nextFeatures} />
+            <RoadmapSection stage="LATER" features={laterFeatures} />
+          </div>
         </div>
       </div>
     </div>
@@ -78,4 +91,3 @@ const Roadmap: React.FC = () => {
 };
 
 export default Roadmap;
-
