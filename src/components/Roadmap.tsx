@@ -11,44 +11,44 @@ import {
 
 const Roadmap: React.FC = () => {
   const liveFeatures = [
-    { text: "One-tap Buy/Sell: fire and fill in seconds", icon: Zap },
-    { text: "Launch Snipe: catch first block with one click", icon: Target },
-    { text: "Charts v1: price, volume, basic overlays", icon: BarChart3 },
-    { text: "Copy Trade: mirror top wallets", icon: Copy },
-    { text: "Pending Orders: view, edit, cancel queued trades", icon: Clock },
-    { text: "Positions: live entry, size, real-time PnL", icon: DollarSign },
-    { text: "PnL Overview: instant profit & loss on any wallet", icon: Eye },
-    { text: "Bubble Map: surface bundlers and wallet links", icon: Network },
-    { text: "Token Info v1: price, cap, liquidity, holders, age, supply, personal PnL", icon: Info },
-    { text: "Top Holders: biggest bags at a glance", icon: Users },
-    { text: "Top Traders: wallets with highest realized PnL", icon: TrendingUp },
-    { text: "My Trade History: full personal ledger", icon: History },
-    { text: "Transaction Log: complete on-chain history per token", icon: BookOpen },
-    { text: "Wallets: add, import, label, manage up to 10 wallets", icon: Wallet },
-    { text: "Watchlist: custom radar for tracked tokens", icon: Star }
+    { name: "One-tap Buy/Sell", text: "fire and fill in seconds", icon: Zap },
+    { name: "Launch Snipe", text: "catch first block with one click", icon: Target },
+    { name: "Charts v1", text: "price, volume, basic overlays", icon: BarChart3 },
+    { name: "Copy Trade", text: "mirror top wallets", icon: Copy },
+    { name: "Pending Orders", text: "view, edit, cancel queued trades", icon: Clock },
+    { name: "Positions", text: "live entry, size, real-time PnL", icon: DollarSign },
+    { name: "PnL Overview", text: "instant profit & loss on any wallet", icon: Eye },
+    { name: "Bubble Map", text: "surface bundlers and wallet links", icon: Network },
+    { name: "Token Info v1", text: "price, cap, liquidity, holders, age, supply, personal PnL", icon: Info },
+    { name: "Top Holders", text: "biggest bags at a glance", icon: Users },
+    { name: "Top Traders", text: "wallets with highest realized PnL", icon: TrendingUp },
+    { name: "My Trade History", text: "full personal ledger", icon: History },
+    { name: "Transaction Log", text: "complete on-chain history per token", icon: BookOpen },
+    { name: "Wallets", text: "add, import, label, manage up to 10 wallets", icon: Wallet },
+    { name: "Watchlist", text: "custom radar for tracked tokens", icon: Star }
   ];
 
   const nowFeatures = [
-    { text: "Charts v2: advanced charting with dev indicators, trader analysis, enhanced overlays", icon: Activity },
-    { text: "Custom Dashboard: drag-drop widgets, save layouts for max efficiency", icon: Layout },
-    { text: "Wallet Tracker: add wallets with custom labels, icons, nicknames", icon: Tags },
-    { text: "Wallet Activity Feed: real-time feed with bell notifications and controls", icon: Filter }
+    { name: "Charts v2", text: "advanced charting with dev indicators, trader analysis, enhanced overlays", icon: Activity },
+    { name: "Custom Dashboard", text: "drag-drop widgets, save layouts for max efficiency", icon: Layout },
+    { name: "Wallet Tracker", text: "add wallets with custom labels, icons, nicknames", icon: Tags },
+    { name: "Wallet Activity Feed", text: "real-time feed with bell notifications and controls", icon: Filter }
   ];
 
   const nextFeatures = [
-    { text: "On-Chart Wallet Indicators: visual markers showing tracked wallet activity", icon: LineChart },
-    { text: "Wallet Label Metrics: hover for buy/sell metrics and notification toggles", icon: AlertCircle },
-    { text: "Mobile Webapp: trade on the go from any device", icon: Smartphone },
-    { text: "TWAP / DCA: auto ladder buys & sells with smart exits", icon: Calculator },
-    { text: "Enhanced Token Info: safety scores, liquidity locks, dev tracking", icon: Shield },
-    { text: "Trending Tokens: live feed of volume, price, social, whale activity spikes", icon: Flame }
+    { name: "On-Chart Wallet Indicators", text: "visual markers showing tracked wallet activity", icon: LineChart },
+    { name: "Wallet Label Metrics", text: "hover for buy/sell metrics and notification toggles", icon: AlertCircle },
+    { name: "Mobile Webapp", text: "trade on the go from any device", icon: Smartphone },
+    { name: "TWAP / DCA", text: "auto ladder buys & sells with smart exits", icon: Calculator },
+    { name: "Enhanced Token Info", text: "safety scores, liquidity locks, dev tracking", icon: Shield },
+    { name: "Trending Tokens", text: "live feed of volume, price, social, whale activity spikes", icon: Flame }
   ];
 
   const laterFeatures = [
-    { text: "Banana Battles: competitive trading leagues with leaderboards and rewards", icon: Trophy },
-    { text: "Multichart View: compare multiple tokens or wallets side-by-side", icon: BarChart },
-    { text: "Multichain Support: expand beyond current chain for cross-chain alpha", icon: Globe },
-    { text: "Twitter Tracker: monitor sentiment and influencer calls for early alpha", icon: Twitter }
+    { name: "Banana Battles", text: "competitive trading leagues with leaderboards and rewards", icon: Trophy },
+    { name: "Multichart View", text: "compare multiple tokens or wallets side-by-side", icon: BarChart },
+    { name: "Multichain Support", text: "expand beyond current chain for cross-chain alpha", icon: Globe },
+    { name: "Twitter Tracker", text: "monitor sentiment and influencer calls for early alpha", icon: Twitter }
   ];
 
   return (
@@ -69,7 +69,7 @@ const Roadmap: React.FC = () => {
           <h2 className="font-big-shoulders text-4xl font-bold text-banana-yellow mb-6 text-center">
             LIVE FEATURES
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-1 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <RoadmapSection stage="LIVE" features={liveFeatures} />
           </div>
         </div>
