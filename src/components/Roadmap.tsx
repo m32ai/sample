@@ -12,7 +12,7 @@ import {
 const Roadmap: React.FC = () => {
   const liveFeatures = [
     { name: "One-tap Buy/Sell", text: "fire and fill in seconds", icon: Zap },
-    { name: "Launch Snipe", text: "catch first block with one click", icon: Target },
+    { name: "Auto Sniping", text: "catch first block with one click", icon: Target },
     { name: "Charts v1", text: "price, volume, basic overlays", icon: BarChart3 },
     { name: "Copy Trade", text: "mirror top wallets", icon: Copy },
     { name: "Pending Orders", text: "view, edit, cancel queued trades", icon: Clock },
@@ -69,8 +69,22 @@ const Roadmap: React.FC = () => {
           <h2 className="font-big-shoulders text-4xl font-bold text-banana-yellow mb-6 text-center">
             LIVE FEATURES
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <RoadmapSection stage="LIVE" features={liveFeatures} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {liveFeatures.map((feature, index) => (
+              <div key={index} className="bg-banana-black rounded-lg shadow-md overflow-hidden h-full border-l-4 border-banana-yellow">
+                <div className="p-3 flex items-start gap-3">
+                  <feature.icon className="w-5 h-5 text-banana-yellow flex-shrink-0 mt-0.5" />
+                  <div className="flex-1">
+                    <h3 className="font-big-shoulders text-banana-yellow text-sm font-bold mb-1">
+                      {feature.name}
+                    </h3>
+                    <p className="font-inter text-white text-sm leading-tight">
+                      {feature.text}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
