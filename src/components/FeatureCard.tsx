@@ -15,7 +15,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ name, feature, stage, icon: I
       <div className="p-4 flex items-start gap-3">
         <Icon className="w-6 h-6 text-banana-yellow flex-shrink-0 mt-1" />
         <div className="flex-1">
-          <h3 className="font-big-shoulders text-banana-yellow text-lg font-bold mb-2 leading-tight">
+          <h3 className="font-big-shoulders text-banana-yellow text-xl font-bold mb-2 leading-snug tracking-wide">
             {name}
           </h3>
           <p className="font-inter text-white text-sm leading-relaxed">
