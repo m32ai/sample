@@ -1,4 +1,3 @@
-
 import React from 'react';
 import RoadmapSection from './RoadmapSection';
 import { 
@@ -11,21 +10,25 @@ import {
 
 const Roadmap: React.FC = () => {
   const liveFeatures = [
-    { name: "One-tap Buy/Sell", text: "fire and fill in seconds", icon: Zap },
-    { name: "Auto Sniping", text: "catch first block with one click", icon: Target },
-    { name: "Charts v1", text: "price, volume, basic overlays", icon: BarChart3 },
-    { name: "Copy Trade", text: "mirror top wallets", icon: Copy },
-    { name: "Pending Orders", text: "view, edit, cancel queued trades", icon: Clock },
-    { name: "Positions", text: "live entry, size, real-time PnL", icon: DollarSign },
-    { name: "PnL Overview", text: "instant profit & loss on any wallet", icon: Eye },
-    { name: "Bubble Map", text: "surface bundlers and wallet links", icon: Network },
-    { name: "Token Info v1", text: "price, cap, liquidity, holders, age, supply, personal PnL", icon: Info },
-    { name: "Top Holders", text: "biggest bags at a glance", icon: Users },
-    { name: "Top Traders", text: "wallets with highest realized PnL", icon: TrendingUp },
-    { name: "My Trade History", text: "full personal ledger", icon: History },
-    { name: "Transaction Log", text: "complete on-chain history per token", icon: BookOpen },
-    { name: "Wallets", text: "add, import, label, manage up to 10 wallets", icon: Wallet },
-    { name: "Watchlist", text: "custom radar for tracked tokens", icon: Star }
+    { name: "One-tap Buy/Sell", text: "Fire and fill in seconds", icon: Zap },
+    { name: "Auto Sniping", text: "Catch first block with one click", icon: Target },
+    { name: "Limit Orders", text: "Automate your trading with ease with limit orders", icon: Clock },
+    { name: "Copy Trade", text: "Mirror top wallets", icon: Copy },
+    { name: "Fast & Secure Swaps", text: "All our swaps are MEV-resistant, safeguarded against potential sandwich attacks", icon: Shield },
+    { name: "Anti Rug & Reorg Protection", text: "Top-performing anti-rug system with 85% success rate", icon: Shield },
+    { name: "Scam & Honeypot Protection", text: "Market-leading built-in simulations ensure protection against scam tokens", icon: AlertCircle },
+    { name: "Charts v1", text: "Price, volume, basic overlays", icon: BarChart3 },
+    { name: "Pending Orders", text: "View, edit, cancel queued trades", icon: Clock },
+    { name: "Positions", text: "Live entry, size, real-time PnL", icon: DollarSign },
+    { name: "PnL Overview", text: "Instant profit & loss on any wallet", icon: Eye },
+    { name: "Bubble Map", text: "Surface bundlers and wallet links", icon: Network },
+    { name: "Token Info v1", text: "Price, cap, liquidity, holders, age, supply, personal PnL", icon: Info },
+    { name: "Top Holders", text: "Biggest bags at a glance", icon: Users },
+    { name: "Top Traders", text: "Wallets with highest realized PnL", icon: TrendingUp },
+    { name: "My Trade History", text: "Full personal ledger", icon: History },
+    { name: "Transaction Log", text: "Complete on-chain history per token", icon: BookOpen },
+    { name: "Wallets", text: "Add, import, label, manage up to 10 wallets", icon: Wallet },
+    { name: "Watchlist", text: "Custom radar for tracked tokens", icon: Star }
   ];
 
   const nowFeatures = [
